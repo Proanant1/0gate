@@ -1,0 +1,37 @@
+{
+  "name": "0gate",
+  "version": "0.1.0",
+  "private": true,
+  "description": "0Gate — Decentralized Password Fortress Arena, built on 0G",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "compile": "hardhat compile",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network testnet",
+    "verify:testnet": "hardhat verify --network testnet"
+  },
+  "dependencies": {
+    "@0gfoundation/0g-storage-ts-sdk": "^1.2.6",
+    "ethers": "^6.13.0",
+    "next": "14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.1.3",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.1.3",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/three": "^0.160.0",
+    "autoprefixer": "^10.4.19",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.0",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5"
+  }
+}
